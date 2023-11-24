@@ -1,0 +1,80 @@
+:root{
+    --header: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('/static/img/corazon.jpg'); /* Reemplaza con la ruta correcta a tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
+}
+
+header{
+    background: var(--header) ;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar{
+    width: 50%;
+}
+
+.nav-bar ul{
+    display: flex;
+    padding: 1em;
+    font-size: 1.2em;
+    justify-content: space-around;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+form h1{
+    font-weight: 100;
+    color: white;
+}
+
+.cuerpo{
+    display: block;
+    color: #fff; /* Cambia el color del texto según tu preferencia */
+    font-family: "Helvetica Forte";
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.911); /* Cambia el color de fondo según tu preferencia */
+    overflow: hidden; 
+    padding: 1.5em;
+    border-radius: 1em;
+    justify-content: end;
+    align-items: end;
+}
+
+.cuerpo input{
+    width: 100%;
+    padding: 0.3em;
+    border-radius: 0.3em;
+    border: none;
+}
+
+.cuerpo .Reserva{
+   width: auto; 
+   padding: 0.5em;
+   color: white;
+   background: rgb(255, 0, 0);
+   border: none;
+   margin: 1em;
+}

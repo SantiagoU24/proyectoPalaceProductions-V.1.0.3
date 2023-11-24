@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <link>  
+<head><head>
+    <meta charset="UTF-8">
+    <title>Registrate</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/reservas.css">
+
+</head>
+    <title>Formulario de Reservas</title>
+</head>
+     
+
+<body>
+    <header>
+        <div class="title-logo">
+            <img src="../static/img/logo.jpg" alt="">
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="/">Inicio</a></li>
+                <li><a class="nav-link" href="/portafolio">Portafolio</a></li>
+                <li><a class="nav-link" href="/login">Inicia Sesion</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    
+    <form method="POST" action="/reservas">
+        
+        <div class="cuerpo">
+            
+            <h1>Formulario de Reservas</h1>
+            <div class="op">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" required><br>
+            </div>
+            <div class="op">
+
+                <label for="fecha">Fecha de Reserva:</label>
+                <input type="date" name="fecha" required><br>
+            </div>
+            <div class="op">
+
+                <label for="hora">Hora de Reserva:</label>
+                <input type="time" name="hora" required><br>
+            </div>
+            <div class="op">
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" name="correo" required><br>
+            </div>
+            <input class="Reserva" type="submit" value="Reservar">
+        </div>
+
+        <!-- Aquí se muestra un mensaje de disponibilidad de hora -->
+        {% if mensaje %}
+        <p>{{ mensaje }}</p>
+        {% endif %}
+
+        
+    </form>
+    <fooder>
+        <p> </p>
+    </fooder>
+</body>
+</html>

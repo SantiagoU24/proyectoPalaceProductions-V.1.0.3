@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reservas</title>
+</head>
+<body>
+    <h1>Reservas</h1>
+    
+    <h2>Reservas existentes:</h2>
+    <ul>
+        {% for reserva in reservas %}
+            <li>{{ reserva.nombre }} - Fecha: {{ reserva.fecha }}, Hora: {{ reserva.hora }}</li>
+        {% endfor %}
+    </ul>
+    
+    <h2>Realizar una reserva:</h2>
+    <a href="{{ url_for('formulario') }}">Hacer una reserva</a>
+</body>
+</html>
